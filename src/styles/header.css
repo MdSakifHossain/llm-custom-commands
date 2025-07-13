@@ -1,0 +1,30 @@
+header * {
+  user-select: auto;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1.5px solid var(--border-color);
+}
+
+header nav h2 a {
+  font-family: "Dela Gothic One", sans-serif;
+  font-family: "Rubik Doodle Shadow", system-ui;
+  padding: 48px 96px;
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+header nav ul {
+  padding: 48px 96px;
+  display: flex;
+  gap: 48px;
+}
+
+header nav ul li a {
+  color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
