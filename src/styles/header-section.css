@@ -10,7 +10,6 @@ header nav {
 }
 
 header nav h2 a {
-  font-family: "Dela Gothic One", sans-serif;
   font-family: "Rubik Doodle Shadow", system-ui;
   padding: 48px 96px;
   font-size: 2rem;
@@ -26,5 +25,5 @@ header nav ul {
 header nav ul li a {
   color: var(--text-color);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: 300;
 }

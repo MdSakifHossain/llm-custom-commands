@@ -8,14 +8,17 @@ custom fonts:
 */
 
 /* importign different css */
-@import url("./styles/header.css");
-@import url("./styles/main.css");
+@import url("./styles/header-section.css");
+@import url("./styles/main-section.css");
+@import url("./styles/proj-idea-section.css");
+@import url("./styles/footer-section.css");
 
 :root {
   --accent-color: rgb(0, 173, 181);
   --bg-color: rgba(34, 40, 49, 1);
   --text-color: rgba(238, 238, 238, 1);
   --border-color: rgba(238, 238, 238, 0.1);
+  --svg-color: rgba(238, 238, 238, 0.75);
   --input-bg: rgba(57, 62, 70, 0.5);
 
   --selection-bg-color: rgba(0, 172, 181, 0.704);
@@ -23,6 +26,8 @@ custom fonts:
   --card-border-width: 4px;
 
   --elements-per-line: repeat(2, 1fr);
+  /* how many lines will the card will show */
+  --card-line-clamp: 12;
 }
 
 ::selection {
@@ -49,10 +54,16 @@ body {
   color: var(--text-color);
 }
 
+a {
+  color: inherit;
+}
+
+/* shared styles */
+
 .clamp {
   display: -webkit-box;
-  -webkit-line-clamp: 12;
-  line-clamp: 12;
+  -webkit-line-clamp: var(--card-line-clamp);
   -webkit-box-orient: vertical;
+  line-clamp: var(--card-line-clamp);
   overflow: hidden;
 }

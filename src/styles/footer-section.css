@@ -1,0 +1,77 @@
+/*
+// --- STYLE GUIDE ---
+
+footer                           // Page bottom. ⬇️
+    div.name-and-little-message  // Info wrapper. 🎁
+        h2                       // Main title. 🌟
+        p                        // Small message. 💬
+    ul                           // Social list. 📜
+        li*4                     // Four items. 🔢
+            a                    // Icon link. 🔗
+                svg              // The icon. ✨
+    p.terms-text                 // Legal text. ⚖️
+
+// --- END STYLE GUIDE ---
+*/
+
+/* footer section styles */
+
+footer {
+  border-top: 2px solid var(--border-color);
+  padding: 4.5rem 3rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+footer .name-and-little-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .name-and-little-message h2 {
+  font-family: "Rubik Doodle Shadow", system-ui;
+  font-size: 3rem;
+  text-align: center;
+}
+
+footer .name-and-little-message p {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--svg-color);
+}
+
+footer ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+footer ul li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background: var(--input-bg);
+  border-radius: 50%;
+  color: var(--svg-color);
+  transition: all 0.2s ease;
+}
+
+footer ul li a:hover {
+  color: var(--text-color);
+  transform: scale(1.2);
+}
+
+footer ul li a svg {
+  fill: currentColor;
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+footer .terms-text {
+  font-size: 1.2rem;
+  color: var(--svg-color);
+}
