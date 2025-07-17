@@ -7,12 +7,12 @@ const App = () => {
   document.title = "CustomProompts";
 
   return (
-    <div>
+    <>
       <HeaderSection />
       <MainSection />
       <ProjectIdeaSection />
       <FooterSection />
-    </div>
+    </>
   );
 };
 
