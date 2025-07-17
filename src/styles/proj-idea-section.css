@@ -50,6 +50,7 @@ section.proj-idea-section         // The whole shebang. 🤩
 
 .proj-content-column h2 span {
   color: var(--accent-color);
+  display: block;
 }
 
 .proj-content-column p {
@@ -115,4 +116,50 @@ input[type="submit"] {
   background-color: var(--accent-color);
   border: none;
   border-radius: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .proj-idea-section {
+    padding: 3rem 1.3rem;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .proj-idea-section > * {
+    width: 100%;
+    /* border: 1px solid white; */
+  }
+
+  .proj-content-column {
+    gap: 0.75rem;
+  }
+
+  .proj-content-column h2 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 105%;
+  }
+
+  .proj-content-column h2 span {
+    display: inline;
+  }
+
+  .proj-content-column p {
+    font-size: 1.2rem;
+    line-height: 135%;
+  }
+
+  form {
+    gap: 1rem;
+  }
+
+  form .name-n-email-container {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  input[type="submit"] {
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+  }
 }

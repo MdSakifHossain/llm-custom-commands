@@ -5,8 +5,7 @@ const ProjectIdeaSection = () => {
     <section className="proj-idea-section">
       <div className="proj-content-column">
         <h2>
-          Got a project in <br />
-          <span>mind?</span>
+          Got a project in <span>mind?</span>
         </h2>
         <p>
           Always open to new ideas and collaborations.
