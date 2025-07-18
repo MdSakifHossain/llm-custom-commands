@@ -111,3 +111,56 @@ main ul {
 /* .card:last-child:nth-child(odd) {
     grid-column: 1 / -1; 
   } */
+
+@media screen and (max-width: 576px) {
+  main {
+    /* padding: 3rem 6rem 6rem; */
+    padding: 3rem 1.5rem 4rem;
+    gap: 2rem;
+  }
+
+  main h1 {
+    font-size: 3rem;
+  }
+
+  main h1 span {
+    font-size: 3.3rem;
+  }
+
+  main ul {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    padding: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+
+  .tags-list {
+    gap: 0.7rem;
+  }
+
+  .tags-list li {
+    font-size: 0.9rem;
+  }
+
+  .card-subtitle {
+    padding-left: 0;
+    font-size: 0.95rem;
+    font-weight: 800;
+    word-spacing: 0.2rem;
+    line-height: 120%;
+  }
+
+  .card .cp-btn {
+    --position-of-cp-btn: 0.2rem;
+    top: var(--position-of-cp-btn);
+    right: var(--position-of-cp-btn);
+
+    font-size: 1rem;
+    padding: 0.5rem 1.35rem;
+  }
+}
