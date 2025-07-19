@@ -4,8 +4,6 @@ import FooterSection from "./components/FooterSection";
 import ProjectIdeaSection from "./components/ProjectIdeaSection";
 
 const App = () => {
-  document.title = "CustomProompts";
-
   return (
     <>
       <HeaderSection />
