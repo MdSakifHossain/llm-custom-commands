@@ -1,10 +1,16 @@
-import React from "react";
+import HeaderSection from "./components/HeaderSection.jsx";
+// import MainSection from "./components/MainSection.jsx";
+// import FooterSection from "./components/FooterSection".jsx;
+// import ProjectIdeaSection from "./components/ProjectIdeaSection.jsx";
 
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </div>
+    <>
+      <HeaderSection />
+      {/* <MainSection /> */}
+      {/* <ProjectIdeaSection /> */}
+      {/* <FooterSection /> */}
+    </>
   );
 };
 

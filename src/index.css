@@ -13,14 +13,14 @@ custom fonts:
   --font-pop: "Poppins", sans-serif;
   --font-display: "Rubik Doodle Shadow", sans-serif;
 
-  --accent-color: rgb(0, 173, 181);
-  --bg-color: rgba(34, 40, 49, 1);
-  --text-color: rgba(238, 238, 238, 1);
-  --border-color: rgba(238, 238, 238, 0.1);
-  --svg-color: rgba(238, 238, 238, 0.75);
-  --input-bg: rgba(57, 62, 70, 0.5);
+  --color-accent: rgb(0, 173, 181);
+  --color-bg: rgba(34, 40, 49, 1);
+  --color-text: rgba(238, 238, 238, 1);
+  --color-border: rgba(238, 238, 238, 0.1);
+  --color-svg: rgba(238, 238, 238, 0.75);
+  --color-input-bg: rgba(57, 62, 70, 0.5);
 
-  --selection-bg-color: rgba(0, 172, 181, 0.704);
+  --color-selection-bg-color: rgba(0, 172, 181, 0.704);
 
   --card-border-width: 4px;
 
@@ -30,18 +30,20 @@ custom fonts:
   --card-line-clamp: 12;
 }
 
-::selection {
+/* ::selection {
   background: var(--selection-bg-color);
   color: var(--text-color);
-}
+} */
 
 /* Custom CSS for global scrollbar hiding */
-html,
+/* For Firefox */
+/* html,
 body {
-  scrollbar-width: none; /* For Firefox */
-}
+  scrollbar-width: none; 
+} */
 
-html::-webkit-scrollbar,
+/* For Chrome, Safari, Edge */
+/* html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none; /* For Chrome, Safari, Edge */
-}
+  display: none; 
+} */
