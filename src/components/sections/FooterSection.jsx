@@ -1,15 +1,15 @@
 import React from "react";
+import { seoConfig } from "../../constants/seoConfig.js";
 
 const FooterSection = () => {
   return (
     <footer className="border-t-2 border-border px-12 pt-14 pb-3 flex flex-col items-center gap-8">
       <div className="flex flex-col items-center gap-2">
         <h2 className="text-[2rem] font-display font-semibold md:text-5xl">
-          CustomProompts
+          {seoConfig.title}
         </h2>
         <p className="text-svg text-center md:font-medium">
-          I'm providing a comprehensive collection of my daily operational
-          prompts for your reference.
+          {seoConfig.description}
         </p>
       </div>
       <ul className="flex gap-[1.3rem] md:gap-6">
