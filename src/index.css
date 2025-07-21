@@ -7,6 +7,9 @@ custom fonts:
   font-family: "Rubik Doodle Shadow", system-ui;
 */
 
+:root {
+}
+
 @import "tailwindcss";
 
 @theme {
@@ -30,20 +33,20 @@ custom fonts:
   --card-line-clamp: 12;
 }
 
-/* ::selection {
-  background: var(--selection-bg-color);
-  color: var(--text-color);
-} */
+::selection {
+  background: var(--color-selection-bg-color);
+  color: var(--color-text);
+}
 
 /* Custom CSS for global scrollbar hiding */
 /* For Firefox */
-/* html,
+html,
 body {
-  scrollbar-width: none; 
-} */
+  scrollbar-width: none;
+}
 
 /* For Chrome, Safari, Edge */
-/* html::-webkit-scrollbar,
+html::-webkit-scrollbar,
 body::-webkit-scrollbar {
-  display: none; 
-} */
+  display: none;
+}
