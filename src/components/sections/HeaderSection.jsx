@@ -1,4 +1,4 @@
-import { seoConfig } from "../constants/seoConfig.js";
+import { seoConfig } from "../../constants/seoConfig.js";
 
 const Header = () => {
   return (

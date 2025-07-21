@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import prompts from "../utils/prompts.js";
-import { copyToClipboard } from "../utils/clipboard.js";
+import prompts from "../../utils/prompts.js";
+import { copyToClipboard } from "../../utils/clipboard.js";
 
 const Main = () => {
   // State to track whether the text has been copied for each prompt
@@ -29,7 +29,7 @@ const Main = () => {
   };
 
   return (
-    <main className="py-12 px-6 flex flex-col gap-8 md:px-24">
+    <main className="px-6 flex flex-col gap-8 md:px-10 lg:px-16">
       <h1 className="text-5xl font-display font-bold md:text-7xl">
         Proomts Count:{" "}
         <span className="text-accent leading-[150%]">

@@ -7,9 +7,6 @@ custom fonts:
   font-family: "Rubik Doodle Shadow", system-ui;
 */
 
-:root {
-}
-
 @import "tailwindcss";
 
 @theme {
