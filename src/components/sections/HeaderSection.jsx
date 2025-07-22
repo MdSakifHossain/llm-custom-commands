@@ -10,7 +10,7 @@ const Header = () => {
         >
           <img
             className="w-12 inline"
-            src="./../../vite.svg"
+            src="./../../../vite.svg"
             alt={seoConfig.title}
           />
           {seoConfig.title}
