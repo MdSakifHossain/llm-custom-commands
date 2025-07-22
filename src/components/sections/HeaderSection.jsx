@@ -1,6 +1,6 @@
 import { seoConfig } from "../../constants/seoConfig.js";
 
-const Header = () => {
+const Header = (props) => {
   return (
     <header className="border-b-[1.5px] border-border">
       <nav className="flex justify-center py-5 md:py-8 lg:justify-between lg:px-16 lg:py-8">
@@ -10,7 +10,7 @@ const Header = () => {
         >
           <img
             className="w-12 inline"
-            src="./../../../vite.svg"
+            src={props.iconPath}
             alt={seoConfig.title}
           />
           {seoConfig.title}
