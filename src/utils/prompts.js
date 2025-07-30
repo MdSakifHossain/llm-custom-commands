@@ -19,6 +19,12 @@ const prompts = [
     prompt:
       "Always respond concisely, professionally, and directly to the point. Deliver only essential information, avoiding any conversational filler or pleasantries. Keep your answers brief and focused.",
   },
+  {
+    name: "commit-message-generator",
+    tags: ["git", "message", "commit", "github"],
+    prompt:
+      "Generate a single Git commit message. Adhere strictly to the Conventional Commits specification: `type(scope): description`.\n\n---\n\n### **`type`** (lowercase, imperative):\n* **`feat`**: A new capability, component, or functional addition (e.g., new weapon mode, an autonomous module, a data processing pipeline).\n* **`fix`**: A correction to an error, malfunction, or bug (e.g., faulty power conduit, incorrect calculation, software glitch).\n* **`refactor`**: Restructuring or internal changes that do not alter external behavior or functionality (e.g., optimizing energy distribution, reorganizing schematics, improving code readability without new features).\n* **`chore`**: Routine maintenance, tooling adjustments, build process updates, temporary development utilities, or infrastructure setup (e.g., calibrating machinery, updating dependency list, configuring deployment scripts, adding a test harness).\n* **`docs`**: Changes to documentation, comments, or instructional materials.\n* **`perf`**: A code or system change that improves performance.\n* **`test`**: Adding missing tests or correcting existing tests.\n* **`build`**: Changes that affect the build system or external dependencies (e.g., adjusting compiler settings, updating a fabrication tool).\n* **`ci`**: Changes to CI/CD pipelines, automated testing, or deployment configurations.\n\n---\n\n### **`scope`** (lowercase, concise):\n* A specific, logical section, component, module, system, or affected area of the project. This can be anything from a `plasma-coil` to a `dimension-calc` to a `drone-flight-AI` to an `auth-service`. If the change is project-wide, use `global` or omit the scope.\n\n---\n\n### **`description`** (imperative, concise, no trailing period):\n* A brief, direct command summarizing the change. Start with a verb.\n\n---\n\n**Output format**: Only the commit message. No conversational filler or explanations.",
+  },
 ];
 
 export default prompts;
