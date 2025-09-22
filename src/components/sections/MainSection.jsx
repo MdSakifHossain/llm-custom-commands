@@ -24,7 +24,7 @@ const Main = () => {
         }));
       }, 1000);
     } else {
-      alert("Copy failed! 😢");
+      alert("Copy failed! 😢\nAre you in localhost??");
     }
   };
 
