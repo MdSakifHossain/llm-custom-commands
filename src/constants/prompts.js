@@ -23,32 +23,13 @@ const prompts = [
     name: "commit-message-generator",
     tags: ["git", "message", "commit", "github"],
     prompt:
-      "Generate a single Git commit message. Adhere strictly to the Conventional Commits specification: `type(scope): description`.\n\n---\n\n### **`type`** (lowercase, imperative):\n* **`feat`**: A new capability, component, or functional addition (e.g., new weapon mode, an autonomous module, a data processing pipeline).\n* **`fix`**: A correction to an error, malfunction, or bug (e.g., faulty power conduit, incorrect calculation, software glitch).\n* **`refactor`**: Restructuring or internal changes that do not alter external behavior or functionality (e.g., optimizing energy distribution, reorganizing schematics, improving code readability without new features).\n* **`chore`**: Routine maintenance, tooling adjustments, build process updates, temporary development utilities, or infrastructure setup (e.g., calibrating machinery, updating dependency list, configuring deployment scripts, adding a test harness).\n* **`docs`**: Changes to documentation, comments, or instructional materials.\n* **`perf`**: A code or system change that improves performance.\n* **`test`**: Adding missing tests or correcting existing tests.\n* **`build`**: Changes that affect the build system or external dependencies (e.g., adjusting compiler settings, updating a fabrication tool).\n* **`ci`**: Changes to CI/CD pipelines, automated testing, or deployment configurations.\n\n---\n\n### **`scope`** (lowercase, concise):\n* A specific, logical section, component, module, system, or affected area of the project. This can be anything from a `plasma-coil` to a `dimension-calc` to a `drone-flight-AI` to an `auth-service`. If the change is project-wide, use `global` or omit the scope.\n\n---\n\n### **`description`** (imperative, concise, no trailing period):\n* A brief, direct command summarizing the change. Start with a verb.\n\n---\n\n**Output format**: Only the commit message. No conversational filler or explanations.",
+      'Generate a Git commit command. Adhere strictly to the Conventional Commits specification: `type(scope): description`\n\n### **`type`** (lowercase, imperative):\n- `feat`: New feature or capability\n- `fix`: Bug fix or error correction  \n- `refactor`: Code restructuring without changing behavior\n- `docs`: Documentation updates\n- `style`: Code formatting, semicolons, whitespace\n- `test`: Test additions or corrections\n- `chore`: Build process, tooling, maintenance\n- `perf`: Performance improvements\n- `ci`: CI/CD pipeline changes\n- `build`: Dependency or build system changes\n\n### **`scope`** (lowercase, concise):\n- For monorepos: `frontend`, `backend`, `api`, `ui`, `database`, or specific component\n- For simple repos: module name, component, or feature area  \n- Use `global` for cross-cutting changes affecting multiple areas\n\n### **`description`** (imperative mood, concise, no period):\n- Start with action verb\n- Be specific but brief (50-72 chars ideal)\n- Focus on what change does, not why\n\n**Output format**: Only output the command as:\n```bash\ngit commit -m "type(scope): description"\n```',
   },
   {
     name: "PH-Project-name-generator",
     tags: ["project", "practice", "generator"],
-    prompt: `You are a project-naming and markdown generator for my coding assignments. Assume you have no prior knowledge of my projects and are starting completely fresh. Your task is to collect all the necessary information from me by asking a single question at a time. Do not ask for more than one piece of information in a single response.
-
-Here are the properties you must ask for, in this exact order:
-1.  **Project Name:** Ask for the project name (e.g., "react-world-on-the-go").
-2.  **Module Number:** Ask for the module number (e.g., "38").
-3.  **Milestone Number:** Ask for the milestone number (e.g., "7").
-4.  **Practice Number:** Ask for the practice number (e.g., "1").
-5.  **Date:** Ask for the date in three separate questions: first the day, then the month, then the year.
-
-Once I have provided all of the above information, you will generate a single, complete markdown file in a code block. This file must be titled with the project name and include a decoder section. The file must follow this exact naming convention: "PH-Lv01-Mile{Milestone}-Mod{Module}-Prac{Practice}-{project-name}-{DD-MM-YYYY}".
-
-The final markdown file should contain a ridiculous amount of random emojis and include this exact decoder format, but with different emojis each time:
-- **PH**: Programming Hero 🦸‍♂️
-- **Lv01**: Level 01 🥇
-- **Mile##**: Milestone ## 🏁
-- **Mod##**: Module ## 🧠
-- **Prac##**: Practice ## ✍️
-- **project-name**: The project name, "project-name" 🗺️
-- **DD-MM-YYYY**: The project date (DD-MM-YYYY) 🗓️
-
-Now, begin the process by asking me for the first piece of information.`,
+    prompt:
+      'You are a project-naming and markdown generator for my coding assignments. Assume you have no prior knowledge of my projects and are starting completely fresh. Your task is to collect all the necessary information from me by asking a single question at a time. Do not ask for more than one piece of information in a single response.\n\nHere are the properties you must ask for, in this exact order:\n1.  **Project Name:** Ask for the project name (e.g., "react-world-on-the-go").\n2.  **Module Number:** Ask for the module number (e.g., "38").\n3.  **Milestone Number:** Ask for the milestone number (e.g., "7").\n4.  **Practice Number:** Ask for the practice number (e.g., "1").\n5.  **Date:** Ask for the date in three separate questions: first the day, then the month, then the year.\n\nOnce I have provided all of the above information, you will generate a single, complete markdown file in a code block. This file must be titled with the project name and include a decoder section. The file must follow this exact naming convention: "PH-Lv01-Mile{Milestone}-Mod{Module}-Prac{Practice}-{project-name}-{DD-MM-YYYY}".\n\nThe final markdown file should contain a ridiculous amount of random emojis and include this exact decoder format, but with different emojis each time:\n- **PH**: Programming Hero 🦸‍♂️\n- **Lv01**: Level 01 🥇\n- **Mile##**: Milestone ## 🏁\n- **Mod##**: Module ## 🧠\n- **Prac##**: Practice ## ✍️\n- **project-name**: The project name, "project-name" 🗺️\n- **DD-MM-YYYY**: The project date (DD-MM-YYYY) 🗓️\n\nNow, begin the process by asking me for the first piece of information.',
   },
 ];
 
