@@ -2,6 +2,9 @@
 
 const Title = "CustomProompts";
 
+export const iconPath =
+  "https://www.reshot.com/preview-assets/icons/FBSWJ874DV/plastic-coffee-cup-FBSWJ874DV.svg";
+
 export const seoConfig = {
   title: Title,
   description:

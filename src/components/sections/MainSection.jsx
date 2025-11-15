@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import prompts from "../../utils/prompts.js";
+import prompts from "../../constants/prompts.js";
 import { copyToClipboard } from "../../utils/clipboard.js";
 
 const Main = () => {

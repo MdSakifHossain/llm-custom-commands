@@ -10,7 +10,7 @@ const App = () => {
   return (
     <>
       {/* <BreakpointChecker /> */}
-      <HeaderSection iconPath="/vite.svg" />
+      <HeaderSection />
       <MainSection />
       <ProjectIdeaSection />
       <FooterSection />
